@@ -28,13 +28,21 @@
     <v-main style="background-color: #F5F5F5;">
       <home-section />
       <AboutSection />
+      <education />
+      <ExperienceSection />
+      <PortfolioView />
+      <contact-us-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
 import AboutSection from './views/AboutSection.vue';
+import ContactUsView from './views/ContactUsView.vue';
+import Education from './views/Education.vue';
+import ExperienceSection from './views/ExperienceSection.vue';
 import HomeSection from './views/HomeSection.vue';
+import PortfolioView from './views/PortfolioView.vue';
 
 
 export default {
@@ -42,11 +50,15 @@ export default {
 
   components: {
     HomeSection,
-    AboutSection
+    AboutSection,
+    Education,
+    ExperienceSection,
+    PortfolioView,
+    ContactUsView
 },
 
   data: () => ({
-    //
+   
   }),
 };
 </script>
