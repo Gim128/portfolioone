@@ -1,6 +1,6 @@
 <template>
   <section class="about-us" id="about">
-    <v-img class="pa-10" height="400" gradient="to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)" src="../assets/pic1.jpg"></v-img>
+    <v-img class="pa-10" height="400" gradient="to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)" src="https://img.freepik.com/free-photo/web-design_53876-167070.jpg?w=1060&t=st=1672721978~exp=1672722578~hmac=6edf461ca403918ffe16e6a544bf6906b4c42aa023a60285853bd50cdeba209e">
    <v-row justify="center" class="align-center">
     <v-col lg="6" cols="6">
       <v-card class="text-center pa-6 rounded-lg" color="#e1e0e0c9" elevation="6"> 
@@ -17,17 +17,23 @@
     </v-col>
 
     <v-col lg="6" cols="6">
+      <v-card class="text-center pa-6 rounded-lg" color="#e1e0e0c9" elevation="6">
       <div class="py-1" v-for="(item,index) in items" :key="index">
         <label>{{ item.title }}</label>
-        <v-progress-linear>
-          :color="item.color"
-          height="10"
-          :value="item.value"
+        <v-progress-linear
+        :color="item.color"
+        height="10"
+        :value="item.value"
+        >
+
         </v-progress-linear>
+        
       </div>
+    </v-card>
     </v-col>
 
    </v-row>
+  </v-img>
   </section>
 </template>
 

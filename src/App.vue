@@ -15,10 +15,10 @@
 
     <v-tabs center-active right background-color="transparent" active-class="active-tab">
       <v-tab href="#home">Home</v-tab>
-      <v-tab href="#about">About</v-tab>
-      <v-tab href="#portfolio">Portfolio</v-tab>
-      <v-tab href="#blog">Blog</v-tab>
-      <v-tab href="#contact">Contact</v-tab>
+      <v-tab>About</v-tab>
+      <v-tab>Portfolio</v-tab>
+      <v-tab>Blog</v-tab>
+      <v-tab>Contact</v-tab>
     </v-tabs>
 
     <v-btn large color="primary" class="white--text ml-10">Email Us</v-btn>
@@ -50,3 +50,14 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.v-tab.active-tab {
+  color:gold
+}
+
+  .v-tab.active-tab::before{
+    background-color: #4caf50;
+  }
+
+</style>

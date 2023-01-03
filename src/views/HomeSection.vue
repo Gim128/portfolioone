@@ -1,7 +1,8 @@
 <template>
   <section class="intro-section" id="home">
+    <v-img class="pa-10" height="697" gradient="to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)" src="../assets/pic1.jpg">
     <v-row class="align-center px-10" style="height: 690px; max-height: 690px;">
-      <v-col lg="6" cols="6" class="p-6 font-weight-bold py-16">
+      <v-col lg="12" cols="12" class="p-6 font-weight-bold py-16">
         <h2 class="display-3">
           Leo Labs Holdings
         </h2>
@@ -35,11 +36,12 @@
         </v-row>
       </v-col>
 
-      <v-col lg="6" cols="6" class="hero-image">
+      <!-- <v-col lg="6" cols="6" class="hero-image">
         <img src="@/assets/pic1.jpg" alt="Something">
-      </v-col>
+      </v-col> -->
 
     </v-row>
+  </v-img>
   </section>
 </template>
 
